@@ -17,7 +17,20 @@
                 alert("Este correo ya esta registrado, intenta con otro diferente");
                 window.location = "../index.php";
             </script>
-       '; 
+       ';
+       exit();
+    }
+
+    //Verificar que el nombre de usuario no se repita en la db
+    $verificar_usuario = mysqli_query($conn, "SELECT * FROM usuarios WHERE usuario = '$usuario' ");
+    if(mysqli_num_rows($verificar_usuario) > 0){
+       echo '
+            <script>
+                alert("Este usuario ya esta registrado, intenta con otro diferente");
+                window.location = "../index.php";
+            </script>
+       ';
+       exit();
     }
 
     $ejecutar = mysqli_query($conn, $query);
