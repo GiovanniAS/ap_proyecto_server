@@ -16,7 +16,24 @@
     <title>Bienvenido usuario</title>
 </head>
 <body>
-    <h1>Bienvenido a la pagina, usuario!!</h1>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Bienvenido</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">ETC</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <a href="php/cerrar_sesion.php">Cerrar sesion</a>
 </body>
 </html>
