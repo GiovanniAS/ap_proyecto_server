@@ -31,7 +31,7 @@
                 </div>
                 <div class="caja__trasera-register">
                     <h3>¿Aún no tienes una cuenta?</h3>
-                    <p>Registrate iniciar sesón</p>
+                    <p>Registrate iniciar sesión</p>
                     <button id="btn__registrarse">Registrarse</button>
                 </div>
             </div>
